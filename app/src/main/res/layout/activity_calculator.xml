@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CalculatorActivity">
+
+    <TextView
+        android:id="@+id/Txt_ans"
+        android:layout_width="204dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="175dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="178dp"
+        android:layout_marginBottom="508dp"
+        android:text="Answer Here"
+        android:textColor="#1E88E5"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/Edt_Fnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="154dp"
+        android:layout_marginEnd="104dp"
+        android:layout_marginBottom="404dp"
+        android:ems="10"
+        android:hint="Enter First Number"
+        android:inputType="number"
+        android:textColorHint="#7CB342"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.474"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.913" />
+
+    <EditText
+        android:id="@+id/Edt_Sndnum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="253dp"
+        android:layout_marginEnd="138dp"
+        android:layout_marginBottom="305dp"
+        android:ems="10"
+        android:hint="Enter Second Number"
+        android:inputType="number"
+        android:textColorHint="#122EBF"
+        android:textSize="35sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.313"
+        app:layout_constraintStart_toStartOf="parent"
+           app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/BTn_add"
+        android:layout_width="94dp"
+        android:layout_height="76dp"
+        android:backgroundTint="#082D3E"
+        android:text="+"
+        android:textColor="#C50606"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.138"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+      />
+
+    <Button
+        android:id="@+id/Btn_subtract"
+        android:layout_width="107dp"
+        android:layout_height="76dp"
+        android:layout_marginStart="256dp"
+        android:layout_marginTop="357dp"
+        android:layout_marginEnd="48dp"
+        android:layout_marginBottom="170dp"
+        android:backgroundTint="#5E35B1"
+        android:text="-"
+        android:textColor="#BC0C2C"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/BTn_multiply"
+        android:layout_width="95dp"
+        android:layout_height="79dp"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="481dp"
+        android:layout_marginEnd="273dp"
+        android:layout_marginBottom="43dp"
+        android:backgroundTint="#5E35B1"
+        android:text="*"
+        android:textColor="#D50D31"
+        android:textSize="45sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/Button_divide"
+        android:layout_width="99dp"
+        android:layout_height="74dp"
+        android:backgroundTint="#000000"
+        android:text="/"
+        android:textColor="#AC0E0E"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.887"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.918" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="20dp" />
+</androidx.constraintlayout.widget.ConstraintLayout>
